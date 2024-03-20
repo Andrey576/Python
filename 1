@@ -1,0 +1,24 @@
+mmf={'Карп': 100, 'Карась': 150, 'Густера': 200, 'Уклейка': 500, 'Лещ': 90}
+print(mmf)
+print(mmf['Лещ'])
+mmf['Карп']=50
+mmf['Карась']=100
+mmf['Уклейка']=300
+print(mmf)
+mmf['Язь']=70
+mmf['Голавль']=80
+print(mmf)
+mmf['Карась']=[]
+print(mmf)
+print(mmf.keys())
+print(mmf.values())
+name='Язь'
+new_add = mmf[name]
+if new_add < 100:
+    print("Необходимо докупить %4s"%name)
+name='Уклейка'
+new_add = mmf[name]
+if new_add < 100:
+    print("Необходимо докупить %4s"%name)
+else:
+    print("На складе достаточно %4s"%name)
